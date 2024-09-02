@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@keyframes rotateLeft {
+    0% { transform: rotate(0deg); } /* 시작 각도 */
+    50% { transform: rotate(-20deg); } /* 회전하는 중간 지점 */
+    100% { transform: rotate(0deg); } /* 끝 각도 */
+}
+
+@keyframes rotateRight {
+    0% { transform: rotate(0deg); } /* 시작 각도 */
+    50% { transform: rotate(15deg); } /* 회전하는 중간 지점 */
+    100% { transform: rotate(0deg); } /* 끝 각도 */
+}
+
+/* 이미지에 애니메이션 적용 */
+.left_img img {
+    /* 왼쪽 이미지에 애니메이션 적용 */
+    animation:rotateLeft 2s ease-in-out infinite; /* 2초 동안 반복되는 애니메이션 */
+}
+
+.right_img img {
+    /* 오른쪽 이미지에 애니메이션 적용 */
+    animation: rotateRight 2s ease-in-out infinite; /* 2초 동안 반복되는 애니메이션 */
+}
+
+@keyframes slideToLeft {
+    0% { transform: translateX(0); } /* 시작 위치 */
+    100% { transform: translateX(-100%); } /* 왼쪽으로 이동 */
+}

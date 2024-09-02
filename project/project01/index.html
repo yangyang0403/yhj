@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkin</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Lilita+One&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <style>
+        .swiper-container {
+            position: relative;
+            width: 100%;
+            height: 800px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_img"><img src="img/Group 52.png" alt=""></div>
+            <div class="header_txt">
+                <div class="header_inner">
+                    <ul class="login">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign-up</a></li>
+                    </ul>
+                    <h1><a href="#"><img src="img/logo.png" alt="Dunkin'"></a></h1>
+                    <a href="#"><img src="img/cart.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">Introduction</a>
+                            <ul class="depth2">
+                                <li><a href="#">도넛 이야기</a></li>
+                                <li><a href="#">고객과의 약속</a></li>
+                                <li><a href="#">던킨 생산센터</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu</a>
+                            <ul class="depth2">
+                                <li><a href="#">Donut</a></li>
+                                <li><a href="#">Sandwich</a></li>
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Drinl</a></li>
+                                <li><a href="#">Product</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Event</a>
+                            <ul class="depth2">
+                                <li><a href="#">진행중 이벤트</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Store</a>
+                            <ul class="depth2">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">신규매장</a></li>
+                                <li><a href="#">우수매장</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Franchise</a>
+                            <ul class="depth2">
+                                <li><a href="#">가맹시장안내</a></li>
+                                <li><a href="#">새로운출발안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="swiper-container mv">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="img/mv1.png" alt="all day dunkin"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/mv2.png" alt="matcha dream"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/mv3.png" alt="boston cream latte"></a></div>
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
+        </div>
+
+        <main id="main">
+            <section id="new">
+                <div class="inner">
+                    <h2>NEW</h2>
+                    <iframe width="1420" height="800"
+                        src="https://www.youtube.com/embed/FaKUMD1THK8?autoplay=1&mute=1&loop=1&playlist=FaKUMD1THK8"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section id="best">
+                <div class="inner">
+                    <h2>BEST</h2>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'Tab1')">Donut</button>
+                        <button class="tablinks" onclick="openTab(event, 'Tab2')">Sandwich</button>
+                        <button class="tablinks" onclick="openTab(event, 'Tab3')">Coffee</button>
+                        <button class="tablinks" onclick="openTab(event, 'Tab4')">Drink</button>
+                        <button class="tablinks" onclick="openTab(event, 'Tab5')">Product</button>
+                    </div>
+
+                    <div id="Tab1" class="tabcontent">
+                        <div class="tab_content">
+                            <div class="donut1">
+                                <img src="img/donut1.png" alt="카카오 하니딥">
+                                <h3>카카오 하니딥</h3>
+                                <p>달달한 초코맛의 촉촉한 케익 도넛<br>
+                                    *영양정보 : 1회 제공량 1개(57g)<br>
+                                    열량 224kcal 당류 12g 단백질 2g 포화지방 4.4g 나트륨 360mg<br>
+                                    알레르기 정보 :밀, 대두, 계란, 우유</p>
+                            </div>
+                            <div class="donut2">
+                                <img src="img/donut2.png" alt="페이머스 글레이즈드">
+                                <h3>페이머스 글레이즈드</h3>
+                                <p>더욱 촉촉하고 부드러워진 달콤한 정통 도넛<br>
+                                    *영양정보 : 1회 제공량 1개(46g)<br>
+                                    열량 199kcal 당류 8g 단백질 2g 포화지방 4.3g 나트륨 250mg<br>
+                                    알레르기 정보 :밀, 대두</p>
+                            </div>
+                            <div class="donut3">
+                                <img src="img/donut3.png" alt="보스톤 크림">
+                                <h3>보스톤 크림</h3>
+                                <p>부드러운 바바리안 크림이 들어간 도넛<br>
+                                    *영양정보 : 1회 제공량 1개(67g)<br>
+                                    열량 244kcal 당류 12g 단백질 3g 포화지방 6g 나트륨 300mg<br>
+                                    알레르기 정보 :밀, 대두, 우유</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab2" class="tabcontent">
+                        <div class="tab_content">
+                            <div class="sand1">
+                                <img src="img/sand1.png" alt="수퍼잭슨 피자 브레드">
+                                <h3>수퍼잭슨 피자 브레드</h3>
+                                <p>수퍼잭슨 피자의 노하우가 담긴 핫 브레드<br>
+                                    *영양정보 : 1회 제공량 1개(126g)<br>열량 303kcal 당류 7g 단백질 12g 포화지방 3g 나트륨 510mg<br>
+                                    알레르기 정보 :밀, 대두, 계란, 우유, 돼지고기, 쇠고기, 토마토</p>
+                            </div>
+                            <div class="sand2">
+                                <img src="img/sand2.png" alt="오리지널 핫도그">
+                                <h3>오리지널 핫도그</h3>
+                                <p>육즙이 풍부한 킬바사 소시지와 케찹,머스타드,피클이 어우러진 정통 오리지널 핫도그<br>
+                                    *영양정보 : 1회 제공량 1개(143g)<br>
+                                    열량 430kcal 당류 8g 단백질 16g 포화지방 10g 나트륨 740mg<br>
+                                    알레르기 정보 :밀, 대두, 계란, 우유, 돼지고기, 쇠고기, 토마토</p>
+                            </div>
+                            <div class="sand3">
+                                <img src="img/sand3.png" alt="콰트로 치즈 크로크무슈">
+                                <h3>콰트로 치즈 크로크무슈</h3>
+                                <p>부드러운 페스츄리식빵에 4가지 치즈가 들어간 고소한 치즈 풍미의 크로크무슈<br>
+                                    *영양정보 : 1회 제공량 1개(130g)<br>
+                                    열량 406kcal 당류 8g 단백질 15g 포화지방 10g 나트륨 890mg<br>
+                                    알레르기 정보 :밀, 대두, 계란, 우유, 돼지고기, 쇠고기</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab3" class="tabcontent">
+                        <div class="tab_content">
+                            <div class="coffee1">
+                                <img src="img/coffee1.png" alt="아이스 카페모카">
+                                <h3>아이스 카페모카</h3>
+                                <p>진한 에스프레소와 달콤한 초코, 부드러운 휘핑크림이 조화로운 커피<br>
+                                    *영양정보 : 1회 제공량 1잔(367g)<br>
+                                    열량 235kcal 당류 28g 단백질 8g 포화지방 5g 나트륨 101mg 카페인 161mg<br>알레르기 정보 :대두, 우유</p>
+                            </div>
+                            <div class="coffee2">
+                                <img src="img/coffee2.png" alt="아이스 아메리카노">
+                                <h3>아이스 아메리카노</h3>
+                                <p>깊은 카카오의 풍미와 풍부한 바디감을 느낄 수 있는 던킨 아이스 아메리카노<br>
+                                    *영양정보 : 1회 제공량 1잔(360g)<br>열량 15kcal 당류 0g 단백질 0g 포화지방 0g 나트륨 1mg 카페인 156mg<br>알레르기
+                                    정보 :없음</p>
+                            </div>
+                            <div class="coffee3">
+                                <img src="img/coffee3.png" alt="아이스 카페라떼">
+                                <h3>아이스 카페라떼</h3>
+                                <p>진한 에스프레소와 신선한 우유의 만남<br>
+                                    *영양정보 : 1회 제공량 1잔(355g)<br>열량 140kcal 당류 9g 단백질 6g 포화지방 4.9g 나트륨 98mg 카페인 156mg<br>
+                                    알레르기 정보 :우유</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab4" class="tabcontent">
+                        <div class="tab_content">
+                            <div class="drink1">
+                                <img src="img/drink1.png" alt="나주배 쿨라타">
+                                <h3>나주배 쿨라타</h3>
+                                <p>갈증에 좋은 국산 나주배를 넣어 더 달콤하고 시원한 쿨라타<br>
+                                    *영양정보 : 1회 제공량 1잔(430g)<br>열량 210kcal 당류 48g 단백질
+                                    0g
+                                    포화지방 0g 나트륨 1mg<br>알레르기 정보 :없음</p>
+                            </div>
+                            <div class="drink2">
+                                <img src="img/drink2.png" alt="자몽 에이드">
+                                <h3>자몽 에이드</h3>
+                                <p>진짜 자몽 알갱이가 살아 있어 더욱 상큼한 에이드<br>
+                                    *영양정보 : 1회 제공량 1잔(477g)<br>열량 135kcal 당류 30g 단백질 0g 포화지방 0g 나트륨 21mg<br>알레르기 정보 :없음
+                                </p>
+                            </div>
+                            <div class="drink3">
+                                <img src="img/drink3.png" alt="레몬에이드">
+                                <h3>레몬에이드</h3>
+                                <p>레몬과즙이 함유된 새콤달콤한 레몬에이드<br>*영양정보 : 1회 제공량 1잔(477g)<br>열량 145kcal 당류 33g 단백질 0g 포화지방 0g
+                                    나트륨 9mg<br>알레르기 정보 :없음</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab5" class="tabcontent">
+                        <div class="tab_content">
+                            <div class="product1">
+                                <img src="img/product1.png" alt="허니 글레이즈드 약과">
+                                <h3>허니 글레이즈드 약과</h3>
+                                <p>도넛 닮은 미니 약과<br> * 제조원 : (주)호남샤니, 유통전문판매원 : 비알코리아(주)</p>
+                            </div>
+                            <div class="product2">
+                                <img src="img/product2.png" alt="던킨 드립백 에티오피아의 축복">
+                                <h3>던킨 드립백 에티오피아의 축복</h3>
+                                <p>´깊고 향긋한 향이 일품, 상큼한 신 맛과 커피의 단 맛이 잘 어우러지는 고급스러운 커피
+                                    <br>- 에티오피아산 싱글 오리진 원두 사용
+                                    <br>- Tasting Notes : JASMINE, GRAPE, CHOCOLATE
+                                    <br>- Roasting point : Medium
+                                </p>
+                            </div>
+                            <div class="product3">
+                                <img src="img/product3.png" alt="던킨에스프레소 블렌드">
+                                <h3>던킨에스프레소 블렌드</h3>
+                                <p>던킨 에스프레소 고유의 다크초콜렛, 카카오의 풍미를 느낄수 있는 커피</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="event">
+                <ul>
+                    <li>
+                        <h2>EVENT</h2>
+                    </li>
+                    <li><a href="#"><img src="img/event2.png" alt="0day"></a></li>
+                    <li><a href="#"><img src="img/event3.png" alt="369스탬프"></a></li>
+                    <li><a href="#"><img src="img/event4.png" alt="아메리카노 1000원"></a></li>
+                    <li><a href="#"><img src="img/event5.png" alt="매주 금요일 할인"></a></li>
+                    <li class="radius"><a href="#"><img src="img/event6.png" alt="1000원 off"></a></li>
+                </ul>
+
+            </section>
+
+            <section id="store">
+                <h2>STORE</h2>
+                <div class="search">
+                    <input type="text" id="search-input" placeholder="근처매장을 찾아보세요!" maxlength="150">
+                    <button><img src="img/search.png" alt=""></button>
+                </div>
+                <p>-시/군/구 + 도로명<br>
+                    예) 동해시 중앙로, 부산시 남구, 대전 현대아파트</p>
+            </section>
+
+            <section id="sns">
+                <h2>SNS</h2>
+                <ul class="icon">
+                    <li><a target="_blank" href="https://www.facebook.com/DunkinKorea"><img src="img/facefook.png"
+                                alt="페이스북"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/dunkin_kr/"><img src="img/insta.png"
+                                alt="인스타그램"></a></li>
+                    <li><a target="_blank"
+                            href="https://twitter.com/i/flow/login?redirect_after_login=%2Fdunkin_kr"><img
+                                src="img/twitter.png" alt="트위터"></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/user/dunkindonutskorea"><img
+                                src="img/youtube.png" alt="유튜브"></a></li>
+                </ul>
+                <div class="ani">
+                    <p class="left_img"><img src="img/sns_bgleft.png" alt=""></p>
+                    <p class="right_img"><img src="img/sns_bgright.png" alt=""></p>
+                </div>
+                <div id="slide">
+                    <ul class="img">
+                        <li><img src="img/sl1.png" alt=""></li>
+                        <li><img src="img/sl2.png" alt=""></li>
+                        <li><img src="img/sl3.png" alt=""></li>
+                        <li><img src="img/sl4.png" alt=""></li>
+                        <li><img src="img/sl5.png" alt=""></li>
+                        <li><img src="img/sl6.png" alt=""></li>
+                        <li><img src="img/sl7.png" alt=""></li>
+                        <li><img src="img/sl8.png" alt=""></li>
+                        <li><img src="img/sl9.png" alt=""></li>
+                        <li><img src="img/sl10.png" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer id="footer">
+            <div class="footer_left">
+                <p class="f_logo"><a href="#"><img src="img/footerlogo.png" alt="Dunkin"></a></p>
+                <address>서울특별시 서초구 남부순환로 2620(양재동 22-149번지)<br>사업자 등록번호 : 303-81-09535<br>
+                    TEL : 080-555-3131<br>비알코리아(주) 대표이사 도세호</address>
+                <p class="copy">COPYRIGHT Ⓒ 2016 BRKOREA COMPANY. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                    <li><a href="#">안전보건경영방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">채용안내</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.mv', {
+                autoplay: {
+                    delay: 3000,
+                    pauseOnMouseEnter: true,
+                },
+
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>
